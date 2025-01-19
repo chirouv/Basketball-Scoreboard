@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKETBALL</title>
+    <link rel="stylesheet" href="basket.css">
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="f.team">
+        <input type="text" placeholder="Team-1" class="team1">
+        <div class="screen" id="team1">0</div>
+        <div class="center">
+        <button onclick="plus1('team1')">+1</button>
+        <button onclick="plus2('team1')">+2</button>
+        <button onclick="plus3('team1')">+3</button>
+        <!-- <button onclick="winner('Team 1')">WIN</button> -->
+    </div>
+    </div>
+    <div class="vs">V/S</div>
+    <div class="s.team">
+        <input type="text" placeholder="Team-2" class="team2">
+        <div class="screen" id="team2">0</div>
+        <div class="center">
+        <button onclick="plus1('team2')">+1</button>
+        <button onclick="plus2('team2')">+2</button>
+        <button onclick="plus3('team2')">+3</button>
+        <!-- <button onclick="winner('Team 2')">WIN</button> -->
+    </div>    
+    </div>
+    </div>
+    <div class="end-game-btn">
+        <button onclick="endGame()">End Game</button>
+    </div>
+    <script src="basket.js"></script>
+</body>
+</html>
