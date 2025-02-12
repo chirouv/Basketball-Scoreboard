@@ -1,3 +1,20 @@
+alert("Welcome to the Basketball Scoreboard! Click on the buttons to increase the score of the team. Enjoy the game!");
+const requiredKeyword = "1608";
+let accessGranted = false;
+
+function askForKeyword() {
+    while(!accessGranted){
+    let userInput = prompt("Enter the secret keyword to start the game:");
+    if (userInput === requiredKeyword) {
+        accessGranted = true;
+        alert("Access granted! You can now use the scoreboard.");
+    } else {
+        alert("Incorrect keyword! Refresh the page and try again.");
+    }
+}
+}
+askForKeyword();
+
 function validateTeamNames() {
     let team1Name = document.querySelector(".team1").value.trim();
     let team2Name = document.querySelector(".team2").value.trim();
@@ -31,7 +48,6 @@ function plus3(team) {
     let currentScore = parseInt(screen.textContent);
     screen.textContent = currentScore + 3;
 }
-alert("Welcome to the Basketball Scoreboard! Click on the buttons to increase the score of the team. Enjoy the game!");
 function endGame() {
     if (!validateTeamNames()) return;
     let team1Score = parseInt(document.getElementById("team1").textContent);
